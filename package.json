@@ -1,0 +1,13 @@
+{
+  "name": "lib-jitsi-meet-installer",
+  "version": "1.0.0",
+  "main": "lib-jitsi-meet.min.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node ./build.js && cd dist && npm install && cd .. && node ./install.js"
+  },
+  "dependencies": {
+    "git-clone": "^0.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
